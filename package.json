@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "package": "npm run build && powershell Compress-Archive -Path dist/* -DestinationPath tetris-extension.zip -Force",
     "lint": "oxlint",
     "preview": "vite preview"
   },
